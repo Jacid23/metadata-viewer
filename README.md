@@ -54,10 +54,18 @@ https://jacid23.github.io/metadata-viewer
 - Fully offline — no data leaves your browser
 - Single self-contained HTML file (no dependencies to install)
 
-## Offline Use
-All processing runs in your browser. The following require internet:
-- CivitAI and Arc En Ciel lookups
-- Large file hashing (>2 GB) — `script.js` (hash-wasm) is already bundled in this repo, so large file support works offline out of the box
+## Offline Execution
+The tool is designed to be used offline and processing is entirely done on your browser. However, the following features require fetching some resources on the internet and will not work without internet connectivity:
+- CivitAI data lookup
+- Processing large files (greater than 2GB)
+    - Optionally, if you wish to maintain everything local, you may download the <a name="unique-anchor-name" href='https://cdn.jsdelivr.net/npm/hash-wasm@4/dist/sha256.umd.min.js'>sha256.umd.min.js</a> file, place it in the same directory as the HTML file, and replace this line
+        ```html
+        <script src="https://cdn.jsdelivr.net/npm/hash-wasm@4/dist/sha256.umd.min.js"></script>
+        ```
+        with 
+        ```html
+        <script src="sha256.umd.min.js"></script>
+        ```
 
 ## Easter Egg
 👁 click it a few times
