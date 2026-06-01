@@ -67,8 +67,5 @@ The tool is designed to be used offline and processing is entirely done on your 
         <script src="sha256.umd.min.js"></script>
         ```
 
-## Easter Egg
-👁 click it a few times
-
 ## Screenshots
 ![App Screenshot](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5c3b0f97-d7ff-4c7a-b9c5-d5f176544151/original=true,quality=90/Screenshot%202025-10-01%20195536.jpeg)
